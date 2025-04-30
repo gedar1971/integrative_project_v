@@ -1,0 +1,38 @@
+name: Entregable_1
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: initial Checkout repo
+        uses: actions/checkout@v4
+
+      - name: paso1 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9.2"
+      - name: paso2 - crea entorno virtual
+        run: python -m venv venv
+      - name: paso3 - activar entorno virtual
+        run: ./venv/Scripts/activate
+      - name: paso4 - actualizar pip
+        run: pip install --upgrade pip
+      - name: paso5 - instalar dependencias
+        run: pip install -e .
+      - name: paso6 - Ejecutar script
+        run: python src/logger.py
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: proyecto integrado V
+          commit_user_name: German Arbelaez [GitHub Actions]
+          commit_user_email: german.arbelaez@est.iudigital.edu.co
+          commit_author: German Arbelaez <german.arbelaez@est.iudigital.edu.co>
