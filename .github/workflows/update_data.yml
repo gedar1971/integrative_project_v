@@ -17,7 +17,7 @@ jobs:
       - name: paso1 Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.9.2"
+          python-version: "3.10.10"
       - name: paso2 - crea entorno virtual
         run: python -m venv venv
       - name: paso3 - activar entorno virtual
@@ -26,9 +26,8 @@ jobs:
         run: pip install --upgrade pip
       - name: paso5 - instalar dependencias
         run: pip install -e .
+
       - name: paso6 - Ejecutar script
-        run: pip install --upgrade yfinance
-      - name: paso7 - Ejecutar script
         run: python main.py
 
       - name: Commit and Push changes
