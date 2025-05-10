@@ -27,6 +27,8 @@ jobs:
       - name: paso5 - instalar dependencias
         run: pip install -e .
       - name: paso6 - Ejecutar script
+        run: pip install --upgrade yfinance
+      - name: paso7 - Ejecutar script
         run: python main.py
 
       - name: Commit and Push changes
