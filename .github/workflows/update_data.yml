@@ -27,7 +27,7 @@ jobs:
       - name: paso5 - instalar dependencias
         run: pip install -e .
       - name: paso6 - Ejecutar script
-        run: python src/logger.py
+        run: python main.py
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
