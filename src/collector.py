@@ -51,12 +51,18 @@ class DataCollector:
         cursor.execute('''CREATE TABLE IF NOT EXISTS historical (
                             datetime TEXT PRIMARY KEY,
                             value REAL)''')
+        
+        duplicates = []
         for record in data:
             try:
                 cursor.execute('''INSERT INTO historical (datetime, value) VALUES (?, ?)''',
                                (record['datetime'], record['value']))
             except sqlite3.IntegrityError:
-                self.logger.warning(f'Registro duplicado encontrado para datetime: {record["datetime"]}. No se insertó.')
+                duplicates.append(record['datetime'])
+        
+        if duplicates:
+            self.logger.warning(f'Se encontraron {len(duplicates)} registros duplicados.')
+        
         connection.commit()
         connection.close()
         self.logger.info('Datos guardados en la base de datos correctamente.')
