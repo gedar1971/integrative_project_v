@@ -61,7 +61,7 @@ class DataCollector:
                 duplicates.append(record['datetime'])
         
         if duplicates:
-            self.logger.warning(f'Se encontraron {len(duplicates)} registros duplicados.')
+            self.logger.warning(f'Se encontraron {len(duplicates)} registros duplicados. No fueron incertados en la base de datos.')
         
         connection.commit()
         connection.close()
