@@ -4,3 +4,95 @@
 2025-05-10 01:43:13,310 - DataCollector - INFO - Datos guardados en la base de datos correctamente.
 2025-05-10 01:43:13,310 - DataCollector - INFO - Guardando datos en el archivo CSV...
 2025-05-10 01:43:13,325 - DataCollector - INFO - Datos guardados en el archivo CSV correctamente.
+2025-05-11 15:47:34,287 - DataCollector - INFO - Descargando datos históricos del paladio...
+2025-05-11 15:47:34,568 - DataCollector - INFO - Datos descargados correctamente.
+2025-05-11 15:47:34,568 - DataCollector - INFO - Guardando datos en la base de datos SQLite...
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-00. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-01. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-02. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-03. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-04. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-05. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-06. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-07. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-08. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-09. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-10. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-11. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-12. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-13. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-14. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-15. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-16. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-18. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-19. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-20. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-21. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-22. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-06-23. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-00. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-01. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-02. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-03. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-04. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-05. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-06. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-07. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-08. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-09. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-10. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-11. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-12. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-13. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-14. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-15. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-16. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-18. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-19. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-20. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-21. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-22. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-07-23. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-00. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-01. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-02. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-03. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-04. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-05. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-06. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-07. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-08. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-09. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-10. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-11. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-12. No se insertó.
+2025-05-11 15:47:34,568 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-13. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-14. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-15. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-16. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-18. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-19. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-20. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-21. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-22. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-08-23. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-00. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-01. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-02. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-03. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-04. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-05. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-06. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-07. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-08. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-09. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-10. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-11. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-12. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-13. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-14. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-15. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - WARNING - Registro duplicado encontrado para datetime: 2025-05-09-16. No se insertó.
+2025-05-11 15:47:34,584 - DataCollector - INFO - Datos guardados en la base de datos correctamente.
+2025-05-11 15:47:34,584 - DataCollector - INFO - Guardando datos en el archivo CSV...
+2025-05-11 15:47:34,584 - DataCollector - INFO - Datos guardados en el archivo CSV correctamente.
