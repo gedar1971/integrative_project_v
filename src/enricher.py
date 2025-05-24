@@ -65,6 +65,12 @@ class Enricher:
             # 5. Fuerza del movimiento
             df['momentum'] = self.calculate_momentum(df)
             
+            # Redondear KPIs a 4 decimales
+            kpi_cols = ['volatility', 'SMA_20', 'EMA_20', 'RSI', 'daily_return', 'cumulative_return', 'momentum']
+            for col in kpi_cols:
+                if col in df.columns:
+                    df[col] = df[col].round(4)
+        
             # Llenar valores NaN con 0
             df = df.fillna(0)
             
