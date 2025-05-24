@@ -13,5 +13,6 @@ setup(
         "requests",
         "python-dotenv",
         "yfinance",
+        "scikit-learn"     
     ] 
 )

@@ -24,6 +24,7 @@ class DataCollector:
     def download_data(self, start_date=None, end_date=None):
         self.logger.info('Descargando datos históricos del paladio...')
         palladium = yf.Ticker("PA=F")
+        
 
         retries = 5
         for attempt in range(retries):
@@ -32,9 +33,19 @@ class DataCollector:
                     data = palladium.history(start=start_date, end=end_date, interval="1h")
                 else:
                     data = palladium.history(period="5d", interval="1h")
+                    
 
                 self.logger.info('Datos descargados correctamente.')
-                return [{'datetime': index.strftime('%Y-%m-%d-%H'), 'value': row['Close']} for index, row in data.iterrows()]
+                return [{
+                    'datetime': index.strftime('%Y-%m-%d-%H'),
+                    'open': row['Open'],
+                    'high': row['High'],
+                    'low': row['Low'],
+                    'close': row['Close'],
+                    'volume': row['Volume'],
+                    'dividends': row['Dividends'],
+                    'stock_splits': row['Stock Splits']
+                } for index, row in data.iterrows()]
             except Exception as e:
                 if 'Rate limited' in str(e) and attempt < retries - 1:
                     wait_time = 2 ** attempt
@@ -47,16 +58,57 @@ class DataCollector:
     def save_to_db(self, data):
         self.logger.info('Guardando datos en la base de datos SQLite...')
         connection = sqlite3.connect(self.db_path)
-        cursor = connection.cursor()
+        cursor = connection.cursor()          
         cursor.execute('''CREATE TABLE IF NOT EXISTS historical (
                             datetime TEXT PRIMARY KEY,
-                            value REAL)''')
+                            open REAL,
+                            high REAL,
+                            low REAL,
+                            close REAL,
+                            volume REAL,
+                            dividends REAL,
+                            stock_splits REAL,
+                            volatility REAL,
+                            SMA_20 REAL,
+                            EMA_20 REAL,
+                            RSI REAL,
+                            daily_return REAL,
+                            cumulative_return REAL,
+                            momentum REAL)''')
         
         duplicates = []
         for record in data:
             try:
-                cursor.execute('''INSERT INTO historical (datetime, value) VALUES (?, ?)''',
-                               (record['datetime'], record['value']))
+                # Redondear todos los valores numéricos a 2 decimales
+                rounded_record = {
+                    'datetime': record['datetime'],
+                    'open': round(record['open'], 4),
+                    'high': round(record['high'], 4),
+                    'low': round(record['low'], 4),
+                    'close': round(record['close'], 4),
+                    'volume': round(record['volume'], 4),
+                    'dividends': round(record['dividends'], 4),
+                    'stock_splits': round(record['stock_splits'], 4),
+                    'volatility': round(record.get('volatility', 0), 4),
+                    'SMA_20': round(record.get('SMA_20', 0), 4),
+                    'EMA_20': round(record.get('EMA_20', 0), 4),
+                    'RSI': round(record.get('RSI', 0), 4),
+                    'daily_return': round(record.get('daily_return', 0), 4),
+                    'cumulative_return': round(record.get('cumulative_return', 0), 4),
+                    'momentum': round(record.get('momentum', 0), 4)
+                }
+                
+                cursor.execute('''INSERT INTO historical 
+                    (datetime, open, high, low, close, volume, dividends, stock_splits,
+                     volatility, SMA_20, EMA_20, RSI, daily_return, cumulative_return, momentum) 
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
+                    (rounded_record['datetime'], rounded_record['open'], rounded_record['high'], 
+                     rounded_record['low'], rounded_record['close'], rounded_record['volume'], 
+                     rounded_record['dividends'], rounded_record['stock_splits'],
+                     rounded_record['volatility'], rounded_record['SMA_20'], 
+                     rounded_record['EMA_20'], rounded_record['RSI'], 
+                     rounded_record['daily_return'], rounded_record['cumulative_return'], 
+                     rounded_record['momentum']))
             except sqlite3.IntegrityError:
                 duplicates.append(record['datetime'])
         

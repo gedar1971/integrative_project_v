@@ -3,6 +3,8 @@ name: Entregable_1
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "0 0 * * *" # Ejecutar a la medianoche todos los días
 
 jobs:
   build:
