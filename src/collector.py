@@ -58,8 +58,13 @@ class DataCollector:
     def save_to_db(self, data):
         self.logger.info('Guardando datos en la base de datos SQLite...')
         connection = sqlite3.connect(self.db_path)
-        cursor = connection.cursor()          
-        cursor.execute('''CREATE TABLE IF NOT EXISTS historical (
+        cursor = connection.cursor()
+
+        # Drop existing table to ensure clean schema
+        cursor.execute('DROP TABLE IF EXISTS historical')
+        
+        # Create table with proper schema
+        cursor.execute('''CREATE TABLE historical (
                             datetime TEXT PRIMARY KEY,
                             open REAL,
                             high REAL,
