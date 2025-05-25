@@ -56,7 +56,9 @@ class Modeller:
             df = df.dropna()
             
             # Seleccionar las características para el modelo
-            features = [ 'close']
+            features = [ 'close', 'open', 'high', 'low', 'volume',
+            'volume_ma5', 'volume_ma20',
+            'price_range', 'price_ma5', 'price_ma20']
             
             # Asegurarse de que todas las características estén presentes
             df = df[features + ['target_volatility']]
