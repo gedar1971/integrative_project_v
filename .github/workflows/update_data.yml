@@ -32,7 +32,7 @@ jobs:
       - name: paso6 - Ejecutar script
         run: python main.py
       - name: paso7 - entrenar y predecir modelo
-        run: python main.py
+        run: python main.py --train --predict
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
