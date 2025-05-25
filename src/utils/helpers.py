@@ -2,6 +2,7 @@ import json
 import os
 import io
 import pandas as pd
+import pickle
 from datetime import datetime
 
 
@@ -26,6 +27,12 @@ def create_file(data, filename, file_format='json'):
             print(f"Archivo CSV '{filename}' generado exitosamente.")
         else:
             raise ValueError("Los datos deben ser un DataFrame para guardar como CSV.")
+            
+    elif file_format == 'pkl' or file_format == 'pickle':
+        with open(filename, 'wb') as pickle_file:
+            pickle.dump(data, pickle_file)
+        print(f"Archivo pickle '{filename}' generado exitosamente.")
+        
     elif file_format == 'txt':
         if isinstance(data, pd.DataFrame):
             data.to_txt(filename, index=False)
