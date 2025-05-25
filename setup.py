@@ -13,6 +13,9 @@ setup(
         "requests",
         "python-dotenv",
         "yfinance",
-        "scikit-learn"     
+        "scikit-learn",
+        "statsmodels",
+        "matplotlib",
+        "seaborn",     
     ] 
 )

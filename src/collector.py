@@ -32,7 +32,7 @@ class DataCollector:
                 if start_date and end_date:
                     data = palladium.history(start=start_date, end=end_date, interval="1h")
                 else:
-                    data = palladium.history(period="5d", interval="1h")
+                    data = palladium.history(period="1y", interval="1d")
                     
 
                 self.logger.info('Datos descargados correctamente.')
