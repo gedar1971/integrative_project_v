@@ -19957,3 +19957,43 @@ Importancia de características:
 2026-09-23 03:55:43,110 - DataCollector - INFO - Modelo cargado exitosamente
 2026-09-23 03:55:43,118 - DataCollector - INFO - Última predicción de volatilidad: 43.0543 para la fecha 2026-09-21 00:00:00
 2026-09-23 03:55:43,122 - DataCollector - INFO - Predicciones guardadas en 'predictions.csv'
+2026-09-24 03:47:41,970 - DataCollector - INFO - Ruta del modelo configurada en: src/palladium/static/models/palladium_model.pkl
+2026-09-24 03:47:41,970 - DataCollector - INFO - Descargando datos históricos del paladio...
+2026-09-24 03:47:42,680 - DataCollector - INFO - Datos descargados correctamente.
+2026-09-24 03:47:42,701 - DataCollector - INFO - Datos enriquecidos exitosamente con KPIs
+2026-09-24 03:47:42,703 - DataCollector - INFO - Guardando datos en la base de datos SQLite...
+2026-09-24 03:47:42,711 - DataCollector - INFO - Datos guardados en la base de datos correctamente.
+2026-09-24 03:47:42,711 - DataCollector - INFO - Guardando datos en el archivo CSV...
+2026-09-24 03:47:42,715 - DataCollector - INFO - Datos guardados en el archivo CSV correctamente.
+2026-09-24 03:47:42,723 - DataCollector - INFO - Datos preparados exitosamente para predicción de volatilidad
+2026-09-24 03:47:44,575 - DataCollector - INFO - Ruta del modelo configurada en: src/palladium/static/models/palladium_model.pkl
+2026-09-24 03:47:44,575 - DataCollector - INFO - Descargando datos históricos del paladio...
+2026-09-24 03:47:44,920 - DataCollector - INFO - Datos descargados correctamente.
+2026-09-24 03:47:44,941 - DataCollector - INFO - Datos enriquecidos exitosamente con KPIs
+2026-09-24 03:47:44,943 - DataCollector - INFO - Guardando datos en la base de datos SQLite...
+2026-09-24 03:47:44,951 - DataCollector - INFO - Datos guardados en la base de datos correctamente.
+2026-09-24 03:47:44,951 - DataCollector - INFO - Guardando datos en el archivo CSV...
+2026-09-24 03:47:44,955 - DataCollector - INFO - Datos guardados en el archivo CSV correctamente.
+2026-09-24 03:47:44,963 - DataCollector - INFO - Datos preparados exitosamente para predicción de volatilidad
+2026-09-24 03:47:44,963 - DataCollector - INFO - Iniciando entrenamiento del modelo...
+2026-09-24 03:47:45,117 - DataCollector - INFO - Intentando guardar modelo en: src/palladium/static/models/palladium_model.pkl
+2026-09-24 03:47:45,121 - DataCollector - INFO - Modelo guardado exitosamente en src/palladium/static/models/palladium_model.pkl (Tamaño: 1441.90 KB)
+2026-09-24 03:47:45,134 - DataCollector - INFO - Modelo entrenado. R2: 0.8853, MSE: 122.6764
+2026-09-24 03:47:45,137 - DataCollector - INFO - 
+Importancia de características:
+       feature  importance
+9   price_ma20    0.322611
+8    price_ma5    0.204579
+6  volume_ma20    0.171826
+5   volume_ma5    0.125992
+0        close    0.074437
+3          low    0.042654
+2         high    0.026555
+1         open    0.021122
+4       volume    0.007621
+7  price_range    0.002602
+2026-09-24 03:47:45,138 - DataCollector - INFO - Modelo entrenado exitosamente
+2026-09-24 03:47:45,138 - DataCollector - INFO - Realizando predicciones...
+2026-09-24 03:47:45,142 - DataCollector - INFO - Modelo cargado exitosamente
+2026-09-24 03:47:45,149 - DataCollector - INFO - Última predicción de volatilidad: 44.7779 para la fecha 2026-09-22 00:00:00
+2026-09-24 03:47:45,153 - DataCollector - INFO - Predicciones guardadas en 'predictions.csv'
